@@ -1,0 +1,442 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+body{
+    background-image:url(https://res.cloudinary.com/donhib3cp/image/upload/v1729803169/Imagen_de_WhatsApp_2024-10-24_a_las_14.49.09_3bbb7672_ebh21o.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+  }
+  /*FOOTER ----------------------------------------------------*/
+  .pierna {
+      padding: 20px;
+      background-color:#132f54;
+      text-align: center;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      position: static;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 10px;
+      font-family: Gill Sans MT;
+      color: #ffffff;
+    }
+  /*BOTON INICIO----------------------------------------------------*/
+  .salida{
+  background-color:rgba(255, 255, 255, 0.5);
+  width:100px;
+  border-radius: 10px;
+  margin: 5px;
+  
+  }
+  .inicio{
+  color: #132f54;
+  font-family:  Franklin Gothic Medium;
+  font-size: 25px;
+  margin-left: 20px;
+  }
+  .logoinicio{
+    height: 65px;
+    border-radius: 5px;
+    margin: auto;
+    padding-top: 5px;
+  }
+  
+    /*HEAD----------------------------------------------------*/
+    header{
+      position: absolute;
+    }
+   .menu1 {
+      display:flex;
+      justify-content: space-evenly;
+      background-color: #ffffff;
+      border-bottom-right-radius: 40px;
+      border-bottom-left-radius:40px ;
+      margin-left: 50px;
+      margin-right: 50px;
+      font-family: Franklin Gothic Medium;
+      font-size: 6 em;
+      height: 120px;
+    }
+  .menu1 h1{
+    font-size: 55px;
+      padding-top: 18px;
+      color:#132f54;
+      display:flex;
+      margin-left: 45px;
+      margin-right: 45px;
+  }
+   
+    .menu2{
+      font-size: 30px;
+      display:flex;
+      justify-content: space-evenly;
+      height:60px;
+      border-radius:40px ;
+      background-color: #ffdf57;
+      padding: 5px 5px 5px 5px;
+      list-style-type: none;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 10px;
+      font-family: Franklin Gothic Medium;
+      
+    }
+    .menu2 li{
+      padding-top: 2px;
+      color: #132f54;
+    }
+    .menu2 li a{
+     text-decoration:none;
+    }
+  
+     .logolola {
+      margin: 17px;
+      height: 80px;
+      border-radius:15px;
+      
+   
+      
+    }
+   
+    .libro{
+      padding-top: 20px;
+      height: 100px;
+     
+    
+    }
+    
+    .busqueda {
+      margin-top: 40px;
+     border-radius: 20px;
+      height: 40px;
+   width: 80%;
+      background-color:  #fdf4a7;
+      border-style: none;
+    
+    }
+    .barra{
+      width: 20%;
+     
+    }
+    .lupa{
+      padding: 0px;
+      height: 40px;
+      background-color: #fdf4a7;
+      border-radius: 100%;
+    } 
+    button{
+      height: 40px;
+      border-style: none;
+      border-radius: 10;
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+      font-size: 15px;
+      font-family:Rubik ;
+  
+    }
+    /*CUADRO INICIO ----------------------------------------------------*/
+    .infoinicio h2{
+      font-family: Franklin Gothic Medium  ; 
+      text-align: center;
+      font-size: 3em;
+     
+    }
+    .cuadroinicio{
+      justify-content:space-between;
+      background-color: #ffffff;
+      border-radius: 20px;
+      text-align: left;
+      padding: 80px;
+      margin-inline: 30%;
+      margin-bottom: 5%;
+      margin-top: 5%;
+      font-family: Gill Sans MT;
+
+    } 
+    .infoinicio{
+      margin-inline: auto;
+    }
+    .cuadroinicio h1{
+      font-size: 2em;
+    
+    }
+    .cuadroinicio button{
+     width: 30%;
+      border-radius: 20px;
+      background-color: #cfceda;
+      border-color: #132f54;
+      text-decoration: none;
+  
+    }
+    .cuadroinicio button:hover{
+      background-color: #ffdf57;
+    }/*CUADRO CONTRASEÑA ----------------------------------------------------*/
+    .cuadrocontraseña{
+      background-color: #ffffff;
+      border-radius: 20px;
+      text-align: left;
+      padding: 80px;
+      margin-inline: 30%;
+      margin-bottom: 5%;
+      margin-top: 5%;
+      font-family: Gill Sans MT;
+    }
+    .cuadrocontraseña h2{
+      font-family: Franklin Gothic Medium  ; 
+      text-align: center;
+      font-size: 3em;
+    }
+    .cuadrocontraseña h1{
+      font-family: Gill Sans MT;
+      font-size: 2em;
+    }
+    .cuadrocontraseña button{
+      width: 30%;
+       border-radius: 20px;
+       background-color: #cfceda;
+       border-color: #132f54;
+       text-decoration: none;
+   
+     }
+     .cuadrocontraseña button:hover{
+       background-color: #ffdf57;
+     }
+   .contraseña{
+    height: 40px;
+    border-radius:20px ;
+    border-style:ridge;
+    border-color:#cfceda ;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+   }
+   /*CUADRO PUBLICACION ----------------------------------------------------*/
+   .cuadropubli h2{
+    font-family: Rubik  ;
+    text-align: center;
+    font-size: 50PX;
+  }
+  .cuadropubli{
+    
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: left;
+    padding: 80px;
+    margin-inline: 15%;
+    margin-bottom: 10%;
+    font-family: Gill Sans MT;
+  
+  
+  }
+  
+  .cuadropubli button{
+   width: 40%;
+    border-radius: 20px;
+    background-color: #cfceda;
+    border-color: #132f54;
+    text-decoration: none;
+  }
+  .cuadropubli button:hover{
+    background-color: #ffdf57;
+  }
+  .cuadropubli input{
+    height: 50px;
+    border-radius: 10px;
+    color: #010101;
+  }
+  .cuadropubli desc{
+    width: auto; /* Ancho automático */
+    transition: width 0.2s; /* Transición suave al cambiar el ancho */
+  
+  }
+  
+  select{
+    height: 50px;
+    border-radius: 10px;
+  }
+  
+  .imagenpublicacion{
+      color:#000000;
+     border-style: none;
+    
+  }
+   form button{
+    margin: 10px;
+   }
+  
+  /*PRINCIPAL ----------------------------------------------------*/
+  .principal{
+    max-width: 1100px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 100px;
+    font-family: Gill Sans MT;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .evento-fecha {
+    font-size: 1.2em;
+    color: #132f54;
+  }
+
+  .evento-imagen img {
+    max-width:900px;
+    max-height: 450px;
+    min-height: 100px;
+    display: block;
+    margin:10px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+  
+  }
+  
+  .evento-descripcion {
+    padding: 20px;
+    line-height: 1.6;
+    font-size:20px;
+  }
+  
+  .evento-detalles {
+    padding: 20px;
+    background-color:#ffffff;
+    border-top: 1px solid #ddd;
+    
+  }
+  
+  .evento-detalles h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  .evento-info {
+    gap: 20px;
+    font-size: px;}
+  
+  
+  
+  
+  .info-item {
+    flex: 1;
+    min-width: 150px;
+    
+  }
+  
+  .info-item h3 {
+    font-size: 1.2em;
+    color: #6a9fb5;
+    margin-bottom: 5px;
+  }
+  
+  .info-item p {
+    font-size: 1em;
+    color: #555;
+  }
+  .seccion{
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 100px;
+    font-family: Gill Sans MT;
+  }
+  
+  
+  /* Estilo para la etiqueta, para que luzca como un botón(boba hp yo si pense que era un boton(ahora eso es un boton para tapar la descripcion en caso de las descripcion sea muy larga)) */
+  label {
+    cursor: pointer;
+    color: white;
+    background-color:#cfceda;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  label:hover {
+    background-color: #6a9fb5;
+  }
+  
+  /* Estilos opcionales para la información del evento */
+  .evento-info {
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .info-item {
+    margin-bottom: 10px;
+
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  p {
+    margin: 5px 0 0;
+  }
+  /*INSTITUCION ----------------------------------------------------*/
+  .institucion img{
+    min-height: 450px;
+    max-height: 450px;
+    margin :10px;
+     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+   
+  }
+  /*CONOCENOS ----------------------------------------------------*/
+  .conocenos img{
+   height: 200px;
+   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+   margin :10px;
+  }
+
+  .showdesc {
+    background: linear-gradient(45deg, #6a9fb5ca, #6a9fb5ca); /* Colores vivos */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .showdesc:hover {
+    background: linear-gradient(45deg, #6a9fb5, #6a9fb5ca); /* Invertir colores */
+    transform: scale(1.05); /* Pequeño zoom */
+  }
+
+  .showdesc:active {
+    transform: scale(0.95); /* Simulación de clic */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .icon {
+    margin-left: 10px;
+    transition: transform 0.3s;
+  }
+
+  .icon.flip {
+    transform: rotate(180deg); /* Rotar el ícono */
+  }
+  label select{
+    color: #132f54;
+  }
+  label input{
+    color: #132f54;
+  }
+  label{
+    color: #132f54;
+  }

@@ -1,0 +1,254 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "prevId": "",
+  "version": "6",
+  "dialect": "sqlite",
+  "tables": {
+    "jornada": {
+      "name": "jornada",
+      "columns": {
+        "idJornada": {
+          "autoincrement": false,
+          "name": "idJornada",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "nomJornada": {
+          "autoincrement": false,
+          "name": "nomJornada",
+          "type": "text(255)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "tipoEvento": {
+      "name": "tipoEvento",
+      "columns": {
+        "idTipoEvento": {
+          "autoincrement": false,
+          "name": "idTipoEvento",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "desTipoEvento": {
+          "autoincrement": false,
+          "name": "desTipoEvento",
+          "type": "text(255)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "lugares": {
+      "name": "lugares",
+      "columns": {
+        "idLugar": {
+          "autoincrement": false,
+          "name": "idLugar",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "nomLugar": {
+          "autoincrement": false,
+          "name": "nomLugar",
+          "type": "text(255)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "admin": {
+      "name": "admin",
+      "columns": {
+        "idAdmin": {
+          "autoincrement": false,
+          "name": "idAdmin",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "contraseña": {
+          "autoincrement": false,
+          "name": "contraseña",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "imagen": {
+      "name": "imagen",
+      "columns": {
+        "idImagen": {
+          "autoincrement": false,
+          "name": "idImagen",
+          "type": "numeric",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "URLImagen": {
+          "autoincrement": false,
+          "name": "URLImagen",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "eventos": {
+      "name": "eventos",
+      "columns": {
+        "idEvento": {
+          "autoincrement": true,
+          "name": "idEvento",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "tituloEvento": {
+          "autoincrement": false,
+          "name": "tituloEvento",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "descEvento": {
+          "autoincrement": false,
+          "name": "descEvento",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "fecEvento": {
+          "autoincrement": false,
+          "name": "fecEvento",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "idTipoEvento": {
+          "autoincrement": false,
+          "name": "idTipoEvento",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "idLugar": {
+          "autoincrement": false,
+          "name": "idLugar",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "idJornada": {
+          "autoincrement": false,
+          "name": "idJornada",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "idImagen": {
+          "autoincrement": false,
+          "name": "idImagen",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {
+        "eventos_idTipoEvento_tipoEvento_idTipoEvento_fk": {
+          "name": "eventos_idTipoEvento_tipoEvento_idTipoEvento_fk",
+          "tableFrom": "eventos",
+          "tableTo": "tipoEvento",
+          "columnsFrom": [
+            "idTipoEvento"
+          ],
+          "columnsTo": [
+            "idTipoEvento"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "eventos_idLugar_lugares_idLugar_fk": {
+          "name": "eventos_idLugar_lugares_idLugar_fk",
+          "tableFrom": "eventos",
+          "tableTo": "lugares",
+          "columnsFrom": [
+            "idLugar"
+          ],
+          "columnsTo": [
+            "idLugar"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "eventos_idJornada_jornada_idJornada_fk": {
+          "name": "eventos_idJornada_jornada_idJornada_fk",
+          "tableFrom": "eventos",
+          "tableTo": "jornada",
+          "columnsFrom": [
+            "idJornada"
+          ],
+          "columnsTo": [
+            "idJornada"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "eventos_idImagen_imagen_idImagen_fk": {
+          "name": "eventos_idImagen_imagen_idImagen_fk",
+          "tableFrom": "eventos",
+          "tableTo": "imagen",
+          "columnsFrom": [
+            "idImagen"
+          ],
+          "columnsTo": [
+            "idImagen"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    }
+  },
+  "views": {},
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}
